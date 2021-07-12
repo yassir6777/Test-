@@ -1,0 +1,23 @@
+<html>
+
+<head>
+<title>Formulaire</title>
+<SCRIPT type="text/javascript">
+function ModifChamp()
+{
+if (document.forms["formulaire1"].checkbox.checked)
+ document.forms["formulaire1"].champ.value='bouton coché';
+else
+ document.forms["formulaire1"].champ.value='bouton non coché'; ;
+}
+</script>
+</head>
+
+<body style="background-color:#58D3F7">
+<form name="formulaire1">
+ <br><input type="checkbox" name="checkbox" onclick="ModifChamp()">
+ <br><input type="TEXTE" name="champ" value="Essai" size="24">
+</form>
+</body>
+
+</html>
